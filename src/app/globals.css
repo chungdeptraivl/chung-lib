@@ -2,32 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Extra Small (XS) */
+@media only screen and (max-width: 575px) {
+
+  .container {
+    margin: 0 auto;
+    width: 94%;
+  }
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* Small (SM) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+  /* CSS styles for small devices */
+  .container {
+    margin: 0 auto;
+    max-width: 96% !important;
+  }
+
+}
+
+/* Medium (MD) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  /* CSS styles for medium devices */
+  .container {
+    margin: 0 auto;
+    max-width: 90% !important;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Large (LG) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+  /* CSS styles for large devices */
+  .container {
+    margin: 0 auto;
+    max-width: 86% !important;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* Extra Large (XL) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    margin: 0 auto;
+    max-width: 80% !important;
   }
 }
